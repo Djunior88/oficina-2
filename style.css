@@ -20,7 +20,7 @@ nav ul {
 }
 
 nav ul li {
-    margin:0 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -32,27 +32,61 @@ nav ul li a:hover {
     color: #ddd;
 }
 
-.div-principal {
+.conteudo-principal {
     max-width: 800px;
     margin: auto;
     padding: 20px;
 }
 
-h1 {
+.conteudo-principal h1 {
     color: #333;
     text-align: center;
+    padding: 50px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
-.div-secundaria {
+.conteudo-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
-.div-secundaria img {
-    width: 520px;
+.conteudo-secundario .imagem {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.conteudo-secundario .texto {
+    flex: 2;
+}
+
+.conteudo-secundario img {
+    width: 360px;
     height: 360px;
-    margin-top: 15px;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.conteudo-secundario img:hover {
+    transform: scale(1.05);
+}
+
+.conteudo-secundario h2 {
+    font-size: 1.8em;
+    color: #0277bd;
+    margin-bottom: 15px;
+}
+
+.conteudo-secundario p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.conteudo-secundario.invertido {
+    flex-direction: row-reverse;
+}
 
